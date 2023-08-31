@@ -1,0 +1,32 @@
+{
+  "name": "@sohanemon/next-image",
+  "version": "1.0.6",
+  "description": "",
+  "source": "./src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sohanemon",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "@types/react": "^18.2.21",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@sohanemon/utils": "^1.0.0",
+    "next": "^13.4.19",
+    "plaiceholder": "^3.0.0",
+    "react": "^18.2.0",
+    "sharp": "^0.32.5"
+  }
+}
