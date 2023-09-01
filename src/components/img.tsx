@@ -1,6 +1,7 @@
+import { cleanSrc, cn } from '@sohanemon/utils';
 import Image from 'next/image';
 import { ImgProps } from '../types/img.type';
-import { cn, cleanSrc } from '@sohanemon/utils';
+import Svg from './svg';
 export default function Img({
   className,
   imageClassName,
@@ -10,6 +11,15 @@ export default function Img({
   aspectRatio = '1/1',
   ...props
 }: ImgProps) {
+  if (src.endsWith('.svg') && props.inject)
+    return (
+      <Svg
+        src={cleanSrc(src!)}
+        aspectRatio={aspectRatio}
+        className={className}
+        {...props}
+      />
+    );
   return (
     <div
       style={{ aspectRatio: aspectRatio }}

@@ -44,9 +44,20 @@ import Img from '@sohanemon/next-image';
 <Img src='/path/to/your/image.png' />;
 ```
 
+### Img/SVG 📜
+
+The `Img` component also can inject `svg` directly to the `dom`.
+
+```jsx
+import Img from '@sohanemon/next-image';
+
+<Img inject src='/path/to/your/image.svg' />;
+```
+
 Key features:
 
 - Intuitive handling of image rendering and aspect ratio.
+- Inject `svg` element directly to the `dom`.
 - Automatic optimization for various screen sizes using the `sizes` attribute.
 - Use `src` prop as `'/public/img.png'`, `'/img.png'` or `'https://hello.world/img.png'`
 - Customization of `className`, `imageClassName`, `placeholderProps`, and more.
