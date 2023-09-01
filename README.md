@@ -23,7 +23,7 @@ yarn add @sohanemon/next-image
 The `Img` component from `'@sohanemon/next-image/dist/placeholder'` directory takes care of loading and displaying images with placeholder support. It provides a smooth visual experience by showing a blurred placeholder image while the main image is loading. ⏳
 
 ```jsx
-import { Img } from '@sohanemon/next-image/dist/placeholder';
+import Img from '@sohanemon/next-image/dist/placeholder';
 
 <Img src='/path/to/your/image.png' />;
 ```
@@ -39,7 +39,7 @@ Key features:
 The `Img` component simplifies the integration of Next.js's `Image` component while allowing for easy customization. 🎨
 
 ```jsx
-import { Img } from '@sohanemon/next-image';
+import Img from '@sohanemon/next-image';
 
 <Img src='/path/to/your/image.png' />;
 ```
