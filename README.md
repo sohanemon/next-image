@@ -58,8 +58,8 @@ Here's a quick guide on how to utilize the components in your Next.js project:
 1. Import the desired component:
 
 ```jsx
-import { Img } from '@sohanemon/next-image';
-import { Img as Placeholder } from '@sohanemon/next-image/dist/placeholder';
+import Img from '@sohanemon/next-image';
+import Placeholder from '@sohanemon/next-image/dist/placeholder';
 ```
 
 2. Use the components within your JSX:
@@ -73,8 +73,8 @@ import { Img as Placeholder } from '@sohanemon/next-image/dist/placeholder';
 ## Example 🌟
 
 ```jsx
-import { Img } from '@sohanemon/next-image';
-import { Img as Placeholder } from '@sohanemon/next-image/dist/placeholder';
+import Img from '@sohanemon/next-image';
+import Placeholder from '@sohanemon/next-image/dist/placeholder';
 
 // ...
 

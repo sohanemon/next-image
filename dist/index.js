@@ -1,1 +1,2 @@
-export { default as Img } from './components/img';
+import { default as Img } from './components/img';
+export default Img;

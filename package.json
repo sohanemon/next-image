@@ -1,6 +1,6 @@
 {
   "name": "@sohanemon/next-image",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Enhance your Next.js image handling with ease",
   "source": "./src/index.ts",
   "main": "./dist/index.js",

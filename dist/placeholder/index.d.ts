@@ -1,1 +1,2 @@
-export { default as Placeholder } from '../components/placeholder';
+import { default as Placeholder } from '../components/placeholder';
+export default Placeholder;
