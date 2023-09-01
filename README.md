@@ -20,12 +20,12 @@ yarn add @sohanemon/next-image
 
 ### Placeholder 🌈
 
-The `Placeholder` component takes care of loading and displaying images with placeholder support. It provides a smooth visual experience by showing a blurred placeholder image while the main image is loading. ⏳
+The `Img` component from `'@sohanemon/next-image/dist/placeholder'` directory takes care of loading and displaying images with placeholder support. It provides a smooth visual experience by showing a blurred placeholder image while the main image is loading. ⏳
 
 ```jsx
-import { Placeholder } from '@sohanemon/next-image';
+import { Img } from '@sohanemon/next-image/dist/placeholder';
 
-<Placeholder src='/path/to/your/image.png' />;
+<Img src='/path/to/your/image.png' />;
 ```
 
 Key features:
@@ -58,7 +58,8 @@ Here's a quick guide on how to utilize the components in your Next.js project:
 1. Import the desired component:
 
 ```jsx
-import { Placeholder, Img } from '@sohanemon/next-image';
+import { Img } from '@sohanemon/next-image';
+import { Img as Placeholder } from '@sohanemon/next-image/dist/placeholder';
 ```
 
 2. Use the components within your JSX:
@@ -72,7 +73,8 @@ import { Placeholder, Img } from '@sohanemon/next-image';
 ## Example 🌟
 
 ```jsx
-import { Placeholder, Img } from '@sohanemon/next-image';
+import { Img } from '@sohanemon/next-image';
+import { Img as Placeholder } from '@sohanemon/next-image/dist/placeholder';
 
 // ...
 
