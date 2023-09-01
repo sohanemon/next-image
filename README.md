@@ -74,7 +74,7 @@ import Placeholder from '@sohanemon/next-image/dist/placeholder';
 
 ```jsx
 import Img from '@sohanemon/next-image';
-import Placeholder from '@sohanemon/next-image/dist/placeholder';
+import Img from '@sohanemon/next-image/dist/placeholder';
 
 // ...
 
