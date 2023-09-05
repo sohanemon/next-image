@@ -1,8 +1,10 @@
-import { HTMLAttributes } from 'react';
+import { ElementType, HTMLAttributes } from 'react';
 export interface ImgProps extends HTMLAttributes<HTMLDivElement> {
     src: string;
     alt?: string;
+    height?: number;
     width?: number;
+    wrapper?: ElementType;
     inject?: boolean;
     aspectRatio?: `${number}/${number}`;
     imageClassName?: string;

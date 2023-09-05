@@ -10,6 +10,7 @@ export default function Img({
   width,
   height,
   placeholderProps,
+  wrapper = 'div',
   children,
   aspectRatio = '1/1',
   ...props
@@ -23,7 +24,7 @@ export default function Img({
         {...props}
       />
     );
-  const Wrapper = width ? Fragment : 'div';
+  const Wrapper = !!width ? Fragment : wrapper;
   return (
     <Wrapper
       style={{ aspectRatio }}
@@ -35,7 +36,7 @@ export default function Img({
         className={cn(
           'object-contain',
           { 'object-cover': aspectRatio },
-          width ? className : imageClassName
+          !!width ? className : imageClassName
         )}
         alt={props.alt || ''}
         fill={!width}
