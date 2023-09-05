@@ -2,10 +2,13 @@ import { cleanSrc, cn } from '@sohanemon/utils';
 import Image from 'next/image';
 import { ImgProps } from '../types/img.type';
 import Svg from './svg';
+import { Fragment } from 'react';
 export default function Img({
   className,
   imageClassName,
   src,
+  width,
+  height,
   placeholderProps,
   children,
   aspectRatio = '1/1',
@@ -20,9 +23,10 @@ export default function Img({
         {...props}
       />
     );
+  const Wrapper = width ? Fragment : 'div';
   return (
-    <div
-      style={{ aspectRatio: aspectRatio }}
+    <Wrapper
+      style={{ aspectRatio }}
       className={cn('relative w-full overflow-hidden', className)}
       {...props}
     >
@@ -31,13 +35,15 @@ export default function Img({
         className={cn(
           'object-contain',
           { 'object-cover': aspectRatio },
-          imageClassName
+          width ? className : imageClassName
         )}
         alt={props.alt || ''}
-        fill
+        fill={!width}
+        width={width || undefined}
+        height={height || width || undefined}
         sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
         {...placeholderProps}
       />
-    </div>
+    </Wrapper>
   );
 }
