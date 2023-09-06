@@ -7,5 +7,12 @@ export default function Img({ className, imageClassName, src, width, height, pla
     if (src.endsWith('.svg') && props.inject)
         return (_jsx(Svg, { src: cleanSrc(src), aspectRatio: aspectRatio, className: className, ...props }));
     const Wrapper = !!width ? Fragment : wrapper;
-    return (_jsx(Wrapper, { style: { aspectRatio }, className: cn('relative w-full overflow-hidden', className), ...props, children: _jsx(Image, { src: cleanSrc(src), className: cn('object-contain', { 'object-cover': aspectRatio }, !!width ? className : imageClassName), alt: props.alt || '', fill: !width, width: width || undefined, height: height || width || undefined, sizes: '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw', ...placeholderProps }) }));
+    const wrapperProps = !!width
+        ? undefined
+        : {
+            style: { aspectRatio },
+            className: cn('relative w-full overflow-hidden', className),
+            ...props,
+        };
+    return (_jsx(Wrapper, { ...wrapperProps, children: _jsx(Image, { src: cleanSrc(src), className: cn('object-contain', { 'object-cover': aspectRatio }, !!width ? className : imageClassName), alt: props.alt || 'Picture Element', fill: !width, width: width || undefined, height: height || width || undefined, sizes: '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw', ...placeholderProps }) }));
 }

@@ -25,12 +25,15 @@ export default function Img({
       />
     );
   const Wrapper = !!width ? Fragment : wrapper;
+  const wrapperProps = !!width
+    ? undefined
+    : {
+        style: { aspectRatio },
+        className: cn('relative w-full overflow-hidden', className),
+        ...props,
+      };
   return (
-    <Wrapper
-      style={{ aspectRatio }}
-      className={cn('relative w-full overflow-hidden', className)}
-      {...props}
-    >
+    <Wrapper {...wrapperProps}>
       <Image
         src={cleanSrc(src!)}
         className={cn(
@@ -38,7 +41,7 @@ export default function Img({
           { 'object-cover': aspectRatio },
           !!width ? className : imageClassName
         )}
-        alt={props.alt || ''}
+        alt={props.alt || 'Picture Element'}
         fill={!width}
         width={width || undefined}
         height={height || width || undefined}
