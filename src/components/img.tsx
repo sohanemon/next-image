@@ -1,8 +1,8 @@
 import { cleanSrc, cn } from '@sohanemon/utils';
 import Image from 'next/image';
+import { Fragment } from 'react';
 import { ImgProps } from '../types/img.type';
 import Svg from './svg';
-import { Fragment } from 'react';
 export default function Img({
   className,
   imageClassName,
@@ -10,12 +10,13 @@ export default function Img({
   width,
   height,
   placeholderProps,
+  inject,
   wrapper = 'div',
   children,
   aspectRatio = '1/1',
   ...props
 }: ImgProps) {
-  if (src.endsWith('.svg') && props.inject)
+  if (src.endsWith('.svg') && inject)
     return (
       <Svg
         src={cleanSrc(src!)}

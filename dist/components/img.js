@@ -1,10 +1,10 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import { cleanSrc, cn } from '@sohanemon/utils';
 import Image from 'next/image';
-import Svg from './svg';
 import { Fragment } from 'react';
-export default function Img({ className, imageClassName, src, width, height, placeholderProps, wrapper = 'div', children, aspectRatio = '1/1', ...props }) {
-    if (src.endsWith('.svg') && props.inject)
+import Svg from './svg';
+export default function Img({ className, imageClassName, src, width, height, placeholderProps, inject, wrapper = 'div', children, aspectRatio = '1/1', ...props }) {
+    if (src.endsWith('.svg') && inject)
         return (_jsx(Svg, { src: cleanSrc(src), aspectRatio: aspectRatio, className: className, ...props }));
     const Wrapper = !!width ? Fragment : wrapper;
     const wrapperProps = !!width
