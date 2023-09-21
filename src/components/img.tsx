@@ -17,14 +17,7 @@ export default function Img({
   ...props
 }: ImgProps) {
   if (src.endsWith('.svg') && inject)
-    return (
-      <Svg
-        src={cleanSrc(src!)}
-        aspectRatio={aspectRatio}
-        className={className}
-        {...props}
-      />
-    );
+    return <Svg src={cleanSrc(src!)} className={className} {...props} />;
   const Wrapper = !!width ? Fragment : wrapper;
   const wrapperProps = !!width
     ? undefined

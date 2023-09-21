@@ -5,7 +5,7 @@ import { Fragment } from 'react';
 import Svg from './svg';
 export default function Img({ className, imageClassName, src, width, height, placeholderProps, inject, wrapper = 'div', children, aspectRatio = '1/1', ...props }) {
     if (src.endsWith('.svg') && inject)
-        return (_jsx(Svg, { src: cleanSrc(src), aspectRatio: aspectRatio, className: className, ...props }));
+        return _jsx(Svg, { src: cleanSrc(src), className: className, ...props });
     const Wrapper = !!width ? Fragment : wrapper;
     const wrapperProps = !!width
         ? undefined
