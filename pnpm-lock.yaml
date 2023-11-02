@@ -10,16 +10,16 @@ dependencies:
     version: 1.0.1
   next:
     specifier: ^13.4.19
-    version: 13.4.19(react-dom@18.2.0)(react@18.2.0)
+    version: 13.4.19(react-dom@18.2.0)(react@0.0.0-experimental-77c4ac2ce-20231031)
   plaiceholder:
     specifier: ^3.0.0
     version: 3.0.0(sharp@0.32.5)
   react:
-    specifier: ^18.2.0
-    version: 18.2.0
+    specifier: experimental
+    version: 0.0.0-experimental-77c4ac2ce-20231031
   react-svg:
     specifier: ^16.1.22
-    version: 16.1.22(react-dom@18.2.0)(react@18.2.0)
+    version: 16.1.22(react-dom@18.2.0)(react@0.0.0-experimental-77c4ac2ce-20231031)
   sharp:
     specifier: ^0.32.5
     version: 0.32.5
@@ -29,8 +29,8 @@ devDependencies:
     specifier: ^20.5.7
     version: 20.5.7
   '@types/react':
-    specifier: ^18.2.21
-    version: 18.2.21
+    specifier: ^18.2.34
+    version: 18.2.34
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -158,8 +158,8 @@ packages:
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
-  /@types/react@18.2.21:
-    resolution: {integrity: sha512-neFKG/sBAwGxHgXiIxnbm3/AAVQ/cMRS93hvBpg8xYRbeQSPVABp9U2bRnPf0iI4+Ucdv3plSxKK+3CW2ENJxA==}
+  /@types/react@18.2.34:
+    resolution: {integrity: sha512-U6eW/alrRk37FU/MS2RYMjx0Va2JGIVXELTODaTIYgvWGCV4Y4TfTUzG8DdmpDNIT0Xpj/R7GfyHOJJrDttcvg==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
@@ -357,7 +357,7 @@ packages:
     resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==}
     dev: false
 
-  /next@13.4.19(react-dom@18.2.0)(react@18.2.0):
+  /next@13.4.19(react-dom@18.2.0)(react@0.0.0-experimental-77c4ac2ce-20231031):
     resolution: {integrity: sha512-HuPSzzAbJ1T4BD8e0bs6B9C1kWQ6gv8ykZoRWs5AQoiIuqbGHHdQO7Ljuvg05Q0Z24E2ABozHe6FxDvI6HfyAw==}
     engines: {node: '>=16.8.0'}
     hasBin: true
@@ -377,9 +377,9 @@ packages:
       busboy: 1.6.0
       caniuse-lite: 1.0.30001525
       postcss: 8.4.14
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      styled-jsx: 5.1.1(react@18.2.0)
+      react: 0.0.0-experimental-77c4ac2ce-20231031
+      react-dom: 18.2.0(react@0.0.0-experimental-77c4ac2ce-20231031)
+      styled-jsx: 5.1.1(react@0.0.0-experimental-77c4ac2ce-20231031)
       watchpack: 2.4.0
       zod: 3.21.4
     optionalDependencies:
@@ -488,13 +488,13 @@ packages:
       strip-json-comments: 2.0.1
     dev: false
 
-  /react-dom@18.2.0(react@18.2.0):
+  /react-dom@18.2.0(react@0.0.0-experimental-77c4ac2ce-20231031):
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
       loose-envify: 1.4.0
-      react: 18.2.0
+      react: 0.0.0-experimental-77c4ac2ce-20231031
       scheduler: 0.23.0
     dev: false
 
@@ -502,7 +502,7 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
-  /react-svg@16.1.22(react-dom@18.2.0)(react@18.2.0):
+  /react-svg@16.1.22(react-dom@18.2.0)(react@0.0.0-experimental-77c4ac2ce-20231031):
     resolution: {integrity: sha512-tZr21uVap8JwFgfbrZaFtCYithW6i96XecHF8yaQZlrbdpfTQSgG2/W8ohfbYV8/KesgxwaRzpEXE5A5T1d/+w==}
     peerDependencies:
       react: ^16.0.0 || ^17.0.0 || ^18.0.0
@@ -512,8 +512,15 @@ packages:
       '@tanem/svg-injector': 10.1.62
       '@types/prop-types': 15.7.5
       prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 0.0.0-experimental-77c4ac2ce-20231031
+      react-dom: 18.2.0(react@0.0.0-experimental-77c4ac2ce-20231031)
+    dev: false
+
+  /react@0.0.0-experimental-77c4ac2ce-20231031:
+    resolution: {integrity: sha512-yDeep2I1KbrHrJEWth6IsjjfggWw66PGQFwNYwLl4I6dQhqjoIlETTCxnldGZrXJBpAevMW2+PRV/kzEZGTlKA==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
     dev: false
 
   /react@18.2.0:
@@ -615,7 +622,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /styled-jsx@5.1.1(react@18.2.0):
+  /styled-jsx@5.1.1(react@0.0.0-experimental-77c4ac2ce-20231031):
     resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
@@ -629,7 +636,7 @@ packages:
         optional: true
     dependencies:
       client-only: 0.0.1
-      react: 18.2.0
+      react: 0.0.0-experimental-77c4ac2ce-20231031
     dev: false
 
   /tailwind-merge@1.14.0:

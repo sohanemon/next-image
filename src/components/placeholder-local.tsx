@@ -3,7 +3,7 @@ import { getPlaiceholder } from 'plaiceholder';
 import { ImgProps } from '../types/img.type';
 import Img from './img';
 
-export default async function Placeholder({ src, ...props }: ImgProps) {
+export default async function PlaceholderLocal({ src, ...props }: ImgProps) {
   let buffer: ArrayBuffer;
 
   if (src.startsWith('http')) {

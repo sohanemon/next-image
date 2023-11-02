@@ -24,14 +24,14 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.5.7",
-    "@types/react": "^18.2.21",
+    "@types/react": "^18.2.34",
     "typescript": "^5.2.2"
   },
   "dependencies": {
     "@sohanemon/utils": "latest",
     "next": "^13.4.19",
     "plaiceholder": "^3.0.0",
-    "react": "^18.2.0",
+    "react": "experimental",
     "react-svg": "^16.1.22",
     "sharp": "^0.32.5"
   },

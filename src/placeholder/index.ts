@@ -1,3 +1,4 @@
-import { default as Placeholder } from '../components/placeholder';
+import { default as PlaceholderLocal } from '../components/placeholder-local';
+import { default as PlaceholderRemote } from '../components/placeholder-remote';
 
-export default Placeholder;
+export { PlaceholderLocal, PlaceholderRemote };
