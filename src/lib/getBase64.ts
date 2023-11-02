@@ -17,3 +17,8 @@ export async function getBase64(imageUrl: string) {
     if (e instanceof Error) console.log(e.stack);
   }
 }
+
+export const toBase64 = (str: string) =>
+  typeof window === 'undefined'
+    ? Buffer.from(str).toString('base64')
+    : window.btoa(str);
