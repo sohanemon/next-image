@@ -1,7 +1,7 @@
 'use client';
 
 import { use } from 'react';
-import { getBase64, toBase64 } from '../lib/getBase64';
+import { getBase64, toBase64 } from '../lib/utils';
 import { ImgProps } from '../types/img.type';
 import Img from './img';
 

@@ -4,15 +4,7 @@ import { ImgProps } from '../types/img.type';
 import Img from './img';
 
 export default async function PlaceholderLocal({ src, ...props }: ImgProps) {
-  let buffer: ArrayBuffer;
-
-  if (src.startsWith('http')) {
-    const res = await fetch(src);
-    buffer = await res.arrayBuffer();
-  } else {
-    buffer = await readFile('.' + src);
-  }
-
+  let buffer: ArrayBuffer = await readFile('.' + src);
   const { base64 } = await getPlaiceholder(Buffer.from(buffer));
 
   return (
