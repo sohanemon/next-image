@@ -25,7 +25,7 @@
   "devDependencies": {
     "@types/node": "^20.5.7",
     "@types/react": "^18.2.34",
-    "typescript": "^5.2.2"
+    "typescript": "^6.0.0"
   },
   "dependencies": {
     "@sohanemon/utils": "latest",
