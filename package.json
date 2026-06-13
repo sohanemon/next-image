@@ -23,7 +23,7 @@
   "author": "sohanemon",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.5.7",
+    "@types/node": "^25.0.0",
     "@types/react": "^18.2.34",
     "typescript": "^5.2.2"
   },
