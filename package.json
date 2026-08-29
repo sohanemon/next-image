@@ -33,7 +33,7 @@
     "plaiceholder": "^3.0.0",
     "react": "experimental",
     "react-svg": "^16.1.22",
-    "sharp": "^0.32.5"
+    "sharp": "^0.35.0"
   },
   "homepage": "https://github.com/sohanemon/next-image#sohanemonnext-image-",
   "repository": {
