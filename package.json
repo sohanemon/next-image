@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@sohanemon/utils": "latest",
-    "next": "^13.4.19",
+    "next": "^16.0.0",
     "plaiceholder": "^3.0.0",
     "react": "experimental",
     "react-svg": "^16.1.22",
